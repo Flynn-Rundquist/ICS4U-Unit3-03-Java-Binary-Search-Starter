@@ -47,7 +47,7 @@ final class BinarySearch {
       int searchTest = userArray[midIndex];
 
       if (searchTest == userNumber) {
-          int result = userArray[midIndex];
+          int result = midIndex;
           return result;
       } else if (searchTest < userNumber) {
           return binarySearch(userArray, userNumber, midIndex + 1, highIndex);
